@@ -1,0 +1,63 @@
+/*** ---> ASIDE */
+@media screen and (min-width: 641px) {
+    aside{
+        width: 4vw;
+        @apply bg-tertiary z-50;
+        menu ul{
+            @apply flex flex-col justify-between items-center 
+            fixed h-full left-0 top-0;
+            padding: 5vw 0vw;
+            width: 4vw;
+            li{
+                @apply flex justify-center cursor-pointer;
+            }
+            .ico_real{
+                width: 100%;
+            }
+        }
+    } 
+}
+
+/*** ---> HEADER */
+@media screen and (min-width: 641px) {
+    header{
+        height: 5vw;
+        @apply z-40 w-full;
+        menu{
+            @apply flex fixed items-center bg-secondary m-0 p-0;
+            transform: translateX(-50%);
+            transition:ease-in-out .1s;
+            ul{ 
+                @apply flex-col w-full h-full hidden; 
+            }
+            .ico_menu{
+                width: 4.5vw; height: 4.5vw; padding: 1.3vw;
+                transform: rotateZ(0deg);
+                transition:ease-in-out all .3s;
+            }
+        }
+        menu:hover{   
+            @apply w-full; 
+            transform: translateX(0%);
+            transition:ease-in-out all .2s; 
+            ul{ 
+                @apply flex; 
+            }
+            .ico_menu{
+                transform: rotateZ(90deg);
+                transition:ease-in-out all .5s;
+            }
+        }
+    }
+}
+
+/*** ---> FOOTER */
+@media screen and (max-width: 640px) {
+    footer menu{
+        @apply fixed w-full bottom-0 p-0 m-0;
+        ul{
+            @apply flex justify-between items-center;
+            margin: 2vw 10vw;
+        }
+    }
+}

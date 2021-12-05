@@ -1,0 +1,84 @@
+/** --->  DESKTOP */
+@media screen and (min-width: 641px) {
+    #body{
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-template-rows: min-content 1fr min-content;
+        grid-template-areas: 
+            "aside header"
+            "aside main"
+            "footer footer";
+    }
+
+    .section_r{
+        @apply grid grid-cols-2;
+        grid-template-rows: min-content min-content;
+        grid-template-areas: 
+            "title img"
+            "extra img";
+    }
+    .section_l{
+        @apply grid grid-cols-2;
+        grid-template-areas: 
+            "img title"
+            "img extra";
+    }
+    .section_t{
+        @apply grid grid-cols-2 grid-rows-2;
+        align-items: center;
+        grid-template-areas: 
+            "img img"
+            "title extra";
+    }  
+
+    #code{
+        grid-template-columns: 2.5fr 3fr;
+    }
+}
+
+/** --->  MOBILE */
+@media screen and (max-width: 640px) {
+    #body{
+        display: grid;
+        grid-template-rows: 1fr min-content;
+        grid-template-areas: 
+            "main"
+            "footer";
+    }
+}
+
+/** --->  AREA NAMES */
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside;
+}
+header{
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+
+/** --->  SECTIONS */
+#home{
+    h1{ grid-area: title; }
+    button{ grid-area: extra; }
+    #img_home{ grid-area: img; }
+}
+#code{
+    h1{ grid-area: title; }
+    p{ grid-area: extra; }
+    #img_code{ grid-area: img; }
+}
+#real{
+    h1{ grid-area: title; }
+    .container{ grid-area: extra; }
+    #img_real{ grid-area: img; }
+}
+#connect{
+    h1{ grid-area: title; }
+    form{ grid-area: extra; }
+    #img_connect{ grid-area: img; }
+}

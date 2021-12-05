@@ -1,0 +1,72 @@
+/*** ---> DESKTOP */
+@media screen and (min-width: 641px) {
+    /** HOME */
+    #home{
+        padding: 10vw;
+        #img_home{
+            margin-left: -15vw;
+            width: 140%;
+        }
+        button{ width: 70%; }
+        h1, button{ margin: auto 5vw; }
+    }
+    
+    /** MOBILE */
+    #mobile{
+        #img_mobile{
+            background-size: cover;
+        }
+        > h1{ 
+            margin: 5vw 15vw;
+            text-align: center;
+        }
+        .container{
+            @apply grid-cols-3;
+        }
+    }
+
+    /** CODE */
+    #code{
+        #img_code{
+            height: auto;
+            width: 105%;
+            margin-left: 5vw;
+        }
+        >h1{
+            padding-top: 10vw;
+        }
+        >p{
+            padding-bottom: 10vw;
+        }
+    }
+
+    /** Real */
+    #real{
+        grid-template-rows: auto;
+        #img_real{
+            height: 100%;
+            background-position-x: right;
+        }
+    }
+
+    /** CONNECT */
+    #connect{
+        #img_connect{
+            background-size: cover;
+            margin-top: 4vw;
+        }
+        >h2{
+            margin: auto 5vw;
+        }
+        form{
+            label{font-size: 0; opacity: 0;}
+            input{
+                @apply border border-secondary rounded-sm 
+                text-white; height: 3vw; margin: 1vw 0;
+            }
+            *{
+                width: 100%;
+            }
+        }
+    }
+}

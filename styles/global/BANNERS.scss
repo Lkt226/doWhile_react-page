@@ -1,0 +1,51 @@
+/*** ---> MOBILE BANNERS <--- ***/
+@media screen and (max-width: 640px) {
+    .banner{
+        width: 100% !important;
+        height: 50vh;
+        background-position: center;
+        @apply bg-mWhite p-0 m-0 border-0 bg-cover bg-no-repeat;
+    }
+
+    #img_home{
+        background-image: url("~/public/img/mobile/banner_home.png");
+    }
+    #img_mobile{
+        background-image: url("~/public/img/mobile/banner_mobile.png");
+    }
+    #img_code{
+        background-image: url("~/public/img/mobile/banner_code.png");
+    }
+    #img_real{
+        background-image: url("~/public/img/mobile/banner_real.png");
+    }
+    #img_connect{
+        background-image: url("~/public/img/mobile/banner_connect.png");
+    }
+}
+
+/*** ---> DESKTOP BANNERS <--- ***/
+@media screen and (min-width: 641px) {
+    .banner{
+        width: 100% ;
+        height: 50vh;
+        background-position: center;
+        @apply bg-mWhite p-0 m-0 border-0 bg-contain bg-no-repeat;
+    }
+
+    #img_home{
+        background-image: url("~/public/img/desktop/banner_home.png");
+    }
+    #img_mobile{
+        background-image: url("~/public/img/desktop/banner_mobile.png");
+    }
+    #img_code{
+        background-image: url("~/public/img/desktop/banner_code.png");
+    }
+    #img_real{
+        background-image: url("~/public/img/desktop/banner_real.png");
+    }
+    #img_connect{
+        background-image: url("~/public/img/desktop/banner_connect.png");
+    }
+}

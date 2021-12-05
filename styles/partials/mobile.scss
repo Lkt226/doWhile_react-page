@@ -1,0 +1,51 @@
+/*** ---> MOBILE */
+@media screen and (max-width: 640px) {
+    /** HOME */
+    #home{
+        h1{
+            text-align: center;
+            margin: 4vw auto;
+        }
+        button{
+            margin: auto 5vw;
+            width: 90vw;
+        }
+    }
+    
+    /** REAL */
+    #real{
+        #img_real{
+            background-size: contain;
+        }
+        .container{
+            @apply grid grid-flow-col-dense items-center overflow-x-scroll;
+        }
+        .arrow{
+            @apply bg-transparent border-0;
+            &.last{
+                transform: rotateZ(180deg);
+            }
+        }
+    }
+    /** CONNECT */
+    #connect{
+        margin-bottom: 20vw;
+        #img_connect{
+            background-size: cover;
+            margin-top: 10vw;
+        }
+        >h2{
+            text-align: center;
+        }
+        form{
+            label{font-size: 0; opacity: 0;}
+            input{
+                @apply border border-secondary rounded-sm 
+                text-white; height: 13vw; margin: 2vw 0; padding: 1vw;
+            }
+            *{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+/*** ---> DEFAULT */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+$color-primary: #4D6BA3;
+$color-secondary: #c4c4c4;
+$color-tertiary: #F5F5F5;
+$black: #666666;
+$white: #ffffff;
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Fira Code', monospace;
+    color: $black;
+}
+
+body, html, #__next, #body{
+    @apply h-full;
+}
+
+/*** ---> DEV DELETE */
+.-b{
+    @apply bg-gray-200;
+}
+
+/*** ---> MOBILE */
+@media screen and (max-width: 640px) {
+    /** DEFAULT */
+    .mb-hide{
+        display: none !important;
+    }
+    .icons{
+        width: 70%;
+    }
+    .container{
+        padding: 5vw;
+    }
+    .block{
+        @apply flex;
+        margin-bottom: 6vw;
+        align-items: center;
+        > h1{
+            @apply text-center pr-4;
+        }
+        > p{
+            @apply text-center;
+        }
+    }
+
+    /** TEXT */
+    h1{ font-size: 7vw; }
+    h2{ font-size: 5vw; }
+    p{ font-size: 4vw; }
+
+    /** BUTTONS */
+    button{
+        @apply bg-primary border border-primary rounded-full 
+        text-white; height: 15vw;  padding: 0.5vw;
+    }
+
+    section{
+        @apply flex flex-col items-center;
+        min-height: 90vh;
+        >*{
+            padding: 5vw;
+        }
+    }
+}
+
+/*** ---> DESKTOP */
+@media screen and (min-width: 641px) {
+    /** DEFAULT */
+    .icons{
+        width: 70%;
+    }
+    .d-hide{
+        display: none !important;
+    }
+    .block{
+        @apply flex items-end;
+        margin-bottom: 6vw;
+        > h1{
+            @apply text-center pr-2;
+        }
+        
+    }
+
+    button{
+        @apply bg-primary border border-primary rounded-full 
+        text-white; height: 3vw; padding: 1vw;
+    }
+
+    /** TEXT */
+    h1{ font-size: 3vw; }
+    h2{ font-size: 2.5vw; }
+    p{ font-size: 1.3vw; }
+
+    /** DESKTOP */
+    section {
+        min-height: 90vh;
+        >*{
+            margin: auto 10vw;
+            &.container{
+                @apply w-full grid; gap: 1vw;
+                max-width: fit-content !important;
+            }
+        }
+    }
+}
