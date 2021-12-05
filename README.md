@@ -23,3 +23,10 @@ Recompensas: Pela forma diferente do curso, o aluno pode sentir que não esta ev
 ## Evento
 
 Este projeto esta sendo feito para o evento doWhile da rocketseat, são um total de 6 exercicios e o objetivo é entregar o maximo possivel até o dia 10/12/2021.
+
+1. Landing page para a ideia usando somente o html, css e js. sem nenhum framework.
+2. Landing page usando o react, um compilador de css. recursos livres.
+3. Rest API usando express e typescript.
+4. Rest API usando NestJS, express e typescript.
+5. Fazer uma automação usando o BotCity e Python/Java.
+6. Testar aplicações com o dataDog
