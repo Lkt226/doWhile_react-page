@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Como usar
 
-## Getting Started
+1. #### Instalando na maquina
+* Criar um clone do projeto na sua marquina ou baixar ele.
+* Na pagina do projeto, usando o terminal digite: "npm install" para instalar as dependencias
+* Digite "npm run dev" para iniciar o projeto na URL: http://localhost:3000,
 
-First, run the development server:
+2. #### Acesso pela vercel
+* Acesse o link: https://dowhilepage.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Projeto
+O proposto foi criar uma ideia em cima dessa frase: 
+  * "Pensando em construir o futuro, como você solucionaria os problemas de acesso à educação hoje, utilizando a tecnologia?"
+  
+Pensando nisso minha ideia foi criar um curso com 3 pilares: tempo, acesso e recompensas.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tempo: No lugar de aulas longas que 30-40 minutos, onde a pessoa precisa ficar fixa todo esse tempo, a ideia é fazer aulas extremamente curtas, ao invés de ensinar todo o conteúdo de uma vez, dividir ele em 8-9 aulas e ir espondo o aluno durante o dia, intercalando isso com "exercicios relampagos" que ele vai recebendo nas redes sociais que ele mais usa, como o instagram ou o whatsapp.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Acesso: Todo o curso deve poder ser feito em qualquer dispositivo, seja um celular, desktop, tablet, notebook, então para os exercicios mais simples as respostas devem ser dadas na propria rede social que ele ta fazendo o curso (com uma taxa de erro, baseado no nivel do usuário), e para o caso de exercicios mais complicados eles podem ser feitos atravez de uma editor online.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Recompensas: Pela forma diferente do curso, o aluno pode sentir que não esta evoluindo muito, para resolver isso todos os exercicios separadamente podem ser testados e tem casos de uso, alem disso a idéia geral é que no final de cada modulo o aluno tenha um projeto pronto (juntando todos os exercicios feitos até aquele momento)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Evento
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este projeto esta sendo feito para o evento doWhile da rocketseat, são um total de 6 exercicios e o objetivo é entregar o maximo possivel até o dia 10/12/2021.
